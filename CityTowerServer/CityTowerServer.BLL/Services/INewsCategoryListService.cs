@@ -4,7 +4,7 @@ using CityTowerServer.DAL.Models;
 
 namespace CityTowerServer.BLL.Services
 {
-    interface INewsCategoryListService : IDisposable
+    public interface INewsCategoryListService : IDisposable
     {
         IEnumerable<NewsCategoryList> GetListOfCategoryNews();
     }
