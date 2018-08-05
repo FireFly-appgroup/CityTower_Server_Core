@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace CityTowerServer.DAL.Models
 {
+    [Serializable]
     public partial class NewsCategoryList
     {
         public NewsCategoryList()
