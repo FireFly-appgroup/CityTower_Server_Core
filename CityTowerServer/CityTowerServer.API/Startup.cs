@@ -77,31 +77,5 @@ namespace CityTowerServer.API
 
             app.UseMvc();
         }
-
-        private string GetCustomersAPIUrl()
-        {
-            var endpoint = Configuration["CustomersAPIService:Url"];
-            if (string.IsNullOrEmpty(endpoint))
-            {
-                throw new ArgumentNullException("CustomerAPIService",
-                                                "Need to specify CustomerAPIService in appsettings.json");
-            }
-
-            return endpoint;
-        }
-
-        private HttpClient CreateHttpClient()
-        {
-            var client = new HttpClient()
-            {
-                BaseAddress = new Uri(GetCustomersAPIUrl())
-            };
-
-            client.DefaultRequestHeaders.TryAddWithoutValidation("Accept", "application/json");
-            client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
-            client.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", "AnalyzerStatusCheck");
-
-            return client;
-        }
     }
 }

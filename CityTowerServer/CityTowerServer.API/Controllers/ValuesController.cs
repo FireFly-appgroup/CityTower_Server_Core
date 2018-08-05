@@ -34,7 +34,7 @@ namespace CityTowerServer.API.Controllers
             using (FileStream fs = new FileStream("News.dat", FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, ListOfNews);
-                Debug.WriteLine("Объект сериализован");
+                Debug.WriteLine("Object Serialized");
             }
 
             _logger.LogInformation(_localizer["Information"].Value, ListOfNews);
