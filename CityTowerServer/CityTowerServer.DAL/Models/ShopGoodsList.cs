@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace CityTowerServer.DAL.Models
 {
-    public partial class EshopGoodsList
+    public partial class ShopGoodsList
     {
-        public EshopGoodsList()
+        public ShopGoodsList()
         {
             GoodsPhotoId = new HashSet<GoodsPhotoId>();
         }
@@ -18,7 +18,7 @@ namespace CityTowerServer.DAL.Models
         public int ShopId { get; set; }
 
         public GoodsCategoryList GoodsCategory { get; set; }
-        public Eshop Shop { get; set; }
+        public Shop Shop { get; set; }
         public ICollection<GoodsPhotoId> GoodsPhotoId { get; set; }
     }
 }

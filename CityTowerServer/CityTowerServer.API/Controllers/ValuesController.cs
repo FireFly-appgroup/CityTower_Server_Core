@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CityTowerServer.API.Controllers
 {
-    [Route("api/[controller]")]
     public class ValuesController : Controller
     {
         private INewsCategoryListService NewsCategoryListService;
@@ -18,6 +17,7 @@ namespace CityTowerServer.API.Controllers
         }
    
         [HttpGet]
+        [Route("api/[controller]/listofnews")]
         public IActionResult GetListOfNews()
         {
             var ListOfNews = NewsCategoryListService.GetListOfCategoryNews();

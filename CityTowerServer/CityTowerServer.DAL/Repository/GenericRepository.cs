@@ -8,14 +8,14 @@ namespace CityTowerServer.DAL.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        private CityTower_bdContext _entities;
+        private CityTowerDBContext _entities;
 
-        public GenericRepository(CityTower_bdContext context)
+        public GenericRepository(CityTowerDBContext context)
         {
             _entities = context;
         }
 
-        public CityTower_bdContext database
+        public CityTowerDBContext database
         {
             get { return _entities; }
             set { _entities = value; }

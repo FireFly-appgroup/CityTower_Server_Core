@@ -7,19 +7,19 @@ namespace CityTowerServer.DAL.Models
     {
         public Users()
         {
-            Ad = new HashSet<Ad>();
             AllChat = new HashSet<AllChat>();
+            Announcement = new HashSet<Announcement>();
             Auctioneer = new HashSet<Auctioneer>();
             BlogUserTable = new HashSet<BlogUserTable>();
-            Eshop = new HashSet<Eshop>();
             LikeDislikeList = new HashSet<LikeDislikeList>();
             News = new HashSet<News>();
             Places = new HashSet<Places>();
             Poster = new HashSet<Poster>();
+            Shop = new HashSet<Shop>();
         }
 
         public int Uid { get; set; }
-        public byte[] UserPremium { get; set; }
+        public byte[] UserPremiumStatus { get; set; }
         public DateTime UserRegDate { get; set; }
         public string UserName { get; set; }
         public string UserFirstname { get; set; }
@@ -35,7 +35,7 @@ namespace CityTowerServer.DAL.Models
         public int? UserDislike { get; set; }
         public string UserPasswordHistory { get; set; }
         public string UserLogFile { get; set; }
-        public string UserLoc { get; set; }
+        public string UserLocation { get; set; }
         public DateTime? UserLastOnline { get; set; }
         public string UserSlogon { get; set; }
         public int? SexId { get; set; }
@@ -49,14 +49,14 @@ namespace CityTowerServer.DAL.Models
         public OnlineList OnlineList { get; set; }
         public SysMessage SysMessage { get; set; }
         public UserSettings UserSettings { get; set; }
-        public ICollection<Ad> Ad { get; set; }
         public ICollection<AllChat> AllChat { get; set; }
+        public ICollection<Announcement> Announcement { get; set; }
         public ICollection<Auctioneer> Auctioneer { get; set; }
         public ICollection<BlogUserTable> BlogUserTable { get; set; }
-        public ICollection<Eshop> Eshop { get; set; }
         public ICollection<LikeDislikeList> LikeDislikeList { get; set; }
         public ICollection<News> News { get; set; }
         public ICollection<Places> Places { get; set; }
         public ICollection<Poster> Poster { get; set; }
+        public ICollection<Shop> Shop { get; set; }
     }
 }

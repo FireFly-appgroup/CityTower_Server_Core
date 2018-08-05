@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace CityTowerServer.DAL.Models
 {
-    public partial class BlogBlogIdPostTable
+    public partial class BlogPostTable
     {
-        public BlogBlogIdPostTable()
+        public BlogPostTable()
         {
-            BlogBlogIdPostComments = new HashSet<BlogBlogIdPostComments>();
+            BlogPostComments = new HashSet<BlogPostComments>();
         }
 
-        public int BpId { get; set; }
+        public int BlogPostId { get; set; }
         public string BlogPostTema { get; set; }
         public string BlogPostBody { get; set; }
         public DateTime BlogPostData { get; set; }
@@ -18,6 +18,6 @@ namespace CityTowerServer.DAL.Models
         public int? BlogPostLike { get; set; }
         public int? BlogPostDislike { get; set; }
 
-        public ICollection<BlogBlogIdPostComments> BlogBlogIdPostComments { get; set; }
+        public ICollection<BlogPostComments> BlogPostComments { get; set; }
     }
 }

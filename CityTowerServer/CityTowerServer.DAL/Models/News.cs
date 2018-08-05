@@ -11,7 +11,7 @@ namespace CityTowerServer.DAL.Models
         }
 
         public int NewsId { get; set; }
-        public string NewsTeme { get; set; }
+        public string NewsTema { get; set; }
         public string NewsBody { get; set; }
         public DateTime NewsDate { get; set; }
         public double? NewsRating { get; set; }

@@ -5,22 +5,23 @@ namespace CityTowerServer.DAL.Models
 {
     public partial class LikeDislikeList
     {
-        public int LdId { get; set; }
-        public int? CommentsAdAd { get; set; }
-        public int? AuctioneerId { get; set; }
-        public int? NewsId { get; set; }
-        public int? CommentsNewsId { get; set; }
-        public int? PlacesId { get; set; }
-        public int? CommentsPlacesId { get; set; }
-        public int? PosterId { get; set; }
-        public int? CommentsPosterId { get; set; }
-        public int? BlogPostId { get; set; }
-        public int? BlogPostCommentsId { get; set; }
-        public int? ChatId { get; set; }
-        public int? UserUseId { get; set; }
-        public int? UserId { get; set; }
-        public int? GoodsId { get; set; }
+        public int LikeDislikeId { get; set; }
+        public int? LikeDislikeCommentsAnnouncementId { get; set; }
+        public int? LikeDislikeAuctioneerId { get; set; }
+        public int? LikeDislikeNewsId { get; set; }
+        public int? LikeDislikeCommentsNewsId { get; set; }
+        public int? LikeDislikePlacesId { get; set; }
+        public int? LikeDislikeCommentsPlacesId { get; set; }
+        public int? LikeDislikePosterId { get; set; }
+        public int? LikeDislikeCommentsPosterId { get; set; }
+        public int? LikeDislikeBlogPostId { get; set; }
+        public int? LikeDislikeBlogPostCommentsId { get; set; }
+        public int? LikeDislikeChatId { get; set; }
+        public int? LikeDislikeUserUseId { get; set; }
+        public int? LikeDislikeUserId { get; set; }
+        public int? LikeDislikeGoodsId { get; set; }
         public int Uid { get; set; }
+        public int? LikeDislikeAnnouncementId { get; set; }
 
         public Users U { get; set; }
     }

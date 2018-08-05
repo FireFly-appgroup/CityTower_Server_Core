@@ -7,12 +7,12 @@ namespace CityTowerServer.DAL.Models
     {
         public GoodsCategoryList()
         {
-            EshopGoodsList = new HashSet<EshopGoodsList>();
+            ShopGoodsList = new HashSet<ShopGoodsList>();
         }
 
         public int GoodsCategoryId { get; set; }
         public string Category { get; set; }
 
-        public ICollection<EshopGoodsList> EshopGoodsList { get; set; }
+        public ICollection<ShopGoodsList> ShopGoodsList { get; set; }
     }
 }

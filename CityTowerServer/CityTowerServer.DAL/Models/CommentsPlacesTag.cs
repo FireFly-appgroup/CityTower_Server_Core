@@ -6,7 +6,7 @@ namespace CityTowerServer.DAL.Models
     public partial class CommentsPlacesTag
     {
         public int TagId { get; set; }
-        public int Cplid { get; set; }
+        public int ComPlacesId { get; set; }
 
         public TagList Tag { get; set; }
     }

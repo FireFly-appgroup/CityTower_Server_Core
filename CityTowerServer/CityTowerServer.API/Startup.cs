@@ -29,7 +29,7 @@ namespace CityTowerServer.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationInsightsTelemetry(Configuration);
-            services.AddDbContext<CityTower_bdContext>(options =>
+            services.AddDbContext<CityTowerDBContext>(options =>
                         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddSingleton<INewsCategoryListService, NewsCategoryListService>();

@@ -5,13 +5,13 @@ namespace CityTowerServer.DAL.Models
 {
     public partial class CommentsPlaces
     {
-        public int Cplid { get; set; }
+        public int ComPlasesId { get; set; }
         public int PlacesId { get; set; }
         public int Uid { get; set; }
-        public DateTime CplDate { get; set; }
-        public string CplBody { get; set; }
-        public int? CplLike { get; set; }
-        public int? CplDislike { get; set; }
+        public DateTime ComPlasesDate { get; set; }
+        public string ComPlasesBody { get; set; }
+        public int? ComPlasesLike { get; set; }
+        public int? ComPlasesDislike { get; set; }
 
         public Places Places { get; set; }
     }

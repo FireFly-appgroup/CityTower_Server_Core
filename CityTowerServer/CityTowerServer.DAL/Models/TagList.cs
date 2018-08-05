@@ -7,8 +7,8 @@ namespace CityTowerServer.DAL.Models
     {
         public int TagId { get; set; }
         public string TagName { get; set; }
-        public int? AdCount { get; set; }
-        public int? CommentsAdCount { get; set; }
+        public int? AnnouncementCount { get; set; }
+        public int? CommentsAnnouncementCount { get; set; }
         public int? AuctioneerCount { get; set; }
         public int? NewsCount { get; set; }
         public int? CommentsNewsCount { get; set; }
@@ -23,12 +23,12 @@ namespace CityTowerServer.DAL.Models
         public int? UserCount { get; set; }
         public int? GoodsCount { get; set; }
 
-        public AdTag AdTag { get; set; }
+        public AnnouncementTag AnnouncementTag { get; set; }
         public AuctioneerTag AuctioneerTag { get; set; }
         public BlogPostCommentsTag BlogPostCommentsTag { get; set; }
         public BlogPostTag BlogPostTag { get; set; }
         public ChatTag ChatTag { get; set; }
-        public CommentsAdTag CommentsAdTag { get; set; }
+        public CommentsAnnouncementTag CommentsAnnouncementTag { get; set; }
         public CommentsNewsTag CommentsNewsTag { get; set; }
         public CommentsPlacesTag CommentsPlacesTag { get; set; }
         public CommentsPosterTag CommentsPosterTag { get; set; }

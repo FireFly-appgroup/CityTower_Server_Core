@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace CityTowerServer.DAL.Models
 {
-    public partial class Eshop
+    public partial class Shop
     {
-        public Eshop()
+        public Shop()
         {
             CommentsEshop = new HashSet<CommentsEshop>();
-            EshopGoodsList = new HashSet<EshopGoodsList>();
+            ShopGoodsList = new HashSet<ShopGoodsList>();
         }
 
         public int ShopId { get; set; }
@@ -27,6 +27,6 @@ namespace CityTowerServer.DAL.Models
         public CountryList Country { get; set; }
         public Users U { get; set; }
         public ICollection<CommentsEshop> CommentsEshop { get; set; }
-        public ICollection<EshopGoodsList> EshopGoodsList { get; set; }
+        public ICollection<ShopGoodsList> ShopGoodsList { get; set; }
     }
 }

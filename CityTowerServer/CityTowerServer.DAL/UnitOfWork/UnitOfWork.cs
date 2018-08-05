@@ -6,12 +6,12 @@ namespace CityTowerServer.DAL.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly CityTower_bdContext _context;
+        private readonly CityTowerDBContext _context;
         private IGenericRepository<NewsCategoryList> newsRepository;
 
         public UnitOfWork()
         {
-            this._context = new CityTower_bdContext();
+            this._context = new CityTowerDBContext();
         }
 
         public IGenericRepository<NewsCategoryList> NewsRepository
